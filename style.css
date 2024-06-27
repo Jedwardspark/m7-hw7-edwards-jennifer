@@ -119,6 +119,11 @@ main > article img {
   margin-bottom: 6px;
 }
 
+.first {
+  color: #903;
+  font-size:500%;
+}
+
 footer {
   margin-top: auto;
   background-color: var(--gray);
