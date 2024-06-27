@@ -70,6 +70,15 @@ main > section, main > article {
   background-color: var(--white);
 }
 
+article p:first-of-type:first-letter {
+  color: black;
+  font-size: 3em;
+  margin-right: .2em;
+  float: left;
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 main > section.hero {
   position:fixed;
   top:0%;
@@ -83,6 +92,7 @@ main > section.hero {
   align-items: center;
   text-align: center;
   position:sticky;
+  z-index: 2;
   /* make this banner stick to the top! */
 }
 
@@ -149,14 +159,31 @@ span.tooltip:focus {
 span.tooltip:hover > span,
 span.tooltip:focus > span {
   display: inline;
+  position:absolute;
+  bottom: 150%;
+  left: 20%;
+  color: var(--off-white);
 }
 
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  font-size: .8em;
+  background-color: var(--text-color);
+  padding: .5em;
+  border-radius: 10px;
+  width: 200px;
+  z-index:1;
 }
 
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: var(--text-color) transparent transparent transparent;
 }
