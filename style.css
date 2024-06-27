@@ -140,7 +140,6 @@ span.tooltip {
   position: relative;
   cursor: pointer;
 }
-
 /* underline span on hover/focus */
 span.tooltip:hover,
 span.tooltip:focus {
